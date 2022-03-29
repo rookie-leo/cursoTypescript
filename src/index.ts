@@ -1,5 +1,28 @@
-let isAdmin: boolean | string | number = true;
-isAdmin = 'false';
-isAdmin = 1;
+let names: (number | string)[] = [];
+names.push("leonardo");
+names.push(27);
+console.log(names);
 
-console.log(isAdmin);
+let person: object;
+
+person = {
+    name: "Leonardo",
+    idade: 27
+};
+
+//person = []; //Não dá erro
+
+console.log(person);
+
+let person2: {
+    name: string;
+    idade: number;
+};
+
+person2 = {
+    name: "Leonardo",
+    idade: 27
+};
+
+// person2 = []; // apresenta um erro
+console.log(person2);
