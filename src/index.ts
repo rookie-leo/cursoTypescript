@@ -1,28 +1,12 @@
-let names: (number | string)[] = [];
-names.push("leonardo");
-names.push(27);
-console.log(names);
+let data: [number, string][];
 
-let person: object;
+data = [
+    [1, "João"],
+    [2, "Maria"],
+    [3, "Ana"],
+    [4, "Pedro"]
+];
 
-person = {
-    name: "Leonardo",
-    idade: 27
-};
+data.push([5, "Joaquim"]);
 
-//person = []; //Não dá erro
-
-console.log(person);
-
-let person2: {
-    name: string;
-    idade: number;
-};
-
-person2 = {
-    name: "Leonardo",
-    idade: 27
-};
-
-// person2 = []; // apresenta um erro
-console.log(person2);
+console.log(data);
