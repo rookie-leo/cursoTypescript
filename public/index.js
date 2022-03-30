@@ -1,21 +1,13 @@
 "use strict";
-var UserStatus;
-(function (UserStatus) {
-    UserStatus[UserStatus["Admin"] = 1] = "Admin";
-    UserStatus[UserStatus["Editor"] = 2] = "Editor";
-    UserStatus[UserStatus["User"] = 3] = "User";
-})(UserStatus || (UserStatus = {}));
-function checkStatus(status) {
-    switch (status) {
-        case UserStatus.Admin:
-            console.log('é um admin');
-            break;
-        case UserStatus.Editor:
-            console.log('É um editor');
-            break;
-        case UserStatus.User:
-            console.log('É um user normal');
-            break;
+var Teclas;
+(function (Teclas) {
+    Teclas["Cima"] = "ArrowUp";
+    Teclas["Baixo"] = "ArrowDown";
+    Teclas["Esquerda"] = "ArrowLeft";
+    Teclas["Direita"] = "ArrowRight";
+})(Teclas || (Teclas = {}));
+window.addEventListener('keydown', function (e) {
+    if (e.key == Teclas.Cima) {
+        console.log('Pressionou a tecla seta pra cima');
     }
-}
-checkStatus(3);
+});
